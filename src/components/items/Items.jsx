@@ -1,15 +1,39 @@
 import React from "react";
 
 import "./items.css"
-import burger1 from "./images/burger1.png";
+import burger1 from "../../icons/images/burger1.png";
+import burger2 from "../../icons/images/burger2.png";
+import burger3 from "../../icons/images/burger3.png";
+import pizza1 from  "../../icons/images/pizza1.png";
 
 export const Items = () => {
   return (
     <>
       <div className="Items">
-        <img src={burger1} alt="detailing_items" />
-        <span>Titulos</span>
-        <span>$ 14.24</span>
+        <img className="item-img" src={burger1} alt="detailing_items" />
+        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={burger2} alt="detailing_items" />
+        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={burger3} alt="detailing_items" />
+        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
     </>

@@ -5,6 +5,7 @@ import "./Order.css";
 import { Header } from "../../components/header/Header";
 import { Badge } from "../../components/badge/Badge";
 import { Items } from "../../components/items/Items";
+import { Invoice } from "../../components/invoice/Invoice";
 
 export const Order = () => {
   return (
@@ -20,7 +21,7 @@ export const Order = () => {
               <div className="products-list">
                   <div className="titles">
                     <h2>Choose Your Order</h2>
-                    <h2 className="itemAdded"># Products added</h2>
+                    
                   </div>
                   <div className="list">
                     <Items />
@@ -28,7 +29,8 @@ export const Order = () => {
               </div>
           </div>
           <div id="Invoice" className="product-invoice">
-            Soy una factura
+            <h2 className="itemAdded"># Products added</h2>
+            <Invoice />
           </div>
       </section>
 
