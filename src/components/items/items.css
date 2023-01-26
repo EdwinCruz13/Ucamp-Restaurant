@@ -73,13 +73,16 @@
 .btn-group {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
+  gap:1rem;
+  
 }
 
 .btn-primary {
   color: #fff;
   background-color: #ff5722;
   border-color: #d84315;
+  
 }
 
 .btn-primary:hover {
@@ -94,6 +97,11 @@
   border-color: #eeeeee;
 
   font-weight: bold;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-default:hover {
@@ -104,6 +112,8 @@
 
   transition: all ease-out 0.3s;
 }
+
+
 
 
 

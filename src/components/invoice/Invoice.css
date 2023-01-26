@@ -10,6 +10,7 @@
     width: 100%;
    
     margin-top: 1rem;
+    margin-bottom: 3rem;
   }
   
   
@@ -83,4 +84,12 @@
 
   .card .rounded-right{
     border-radius: 0 25px 25px 0;
+  }
+
+  .card span{
+    display: block;
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
   }
