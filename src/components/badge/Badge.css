@@ -1,0 +1,36 @@
+.badge{
+    padding: 0.8rem;
+    background-color: #E0E0E0;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+
+    border-radius: 25px;
+
+    width: 125px;
+}
+
+.badge:hover{
+   background-color: #FFF8E1;
+   cursor: pointer;
+   color: #FF6F00;
+   
+
+   transition: all ease-out 0.3s;
+}
+
+
+
+.badge span{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 18px;
+}
+
+.badge img{
+    width: 20px;
+    height: 20px;
+ }

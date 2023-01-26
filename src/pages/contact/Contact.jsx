@@ -14,7 +14,6 @@ export const Contact = () => {
         <h2>Redireccioname</h2>
       </section>
 
-      
     </div>
   );
 };
