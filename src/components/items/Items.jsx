@@ -11,28 +11,35 @@ export const Items = () => {
     <>
       <div className="Items">
         <img className="item-img" src={burger1} alt="detailing_items" />
-        <h2 className="item-name">Titulos</h2>
+        <h3 className="item-name">Titulos</h3>
         <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
 
       <div className="Items">
         <img className="item-img" src={burger2} alt="detailing_items" />
-        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-name">Titulos</h4>
         <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
 
       <div className="Items">
         <img className="item-img" src={burger3} alt="detailing_items" />
-        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-name">Titulos</h4>
         <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
 
       <div className="Items">
         <img className="item-img" src={pizza1} alt="detailing_items" />
-        <h2 className="item-name">Titulos</h2>
+        <h4 className="item-name">Titulos</h4>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h4 className="item-name">Titulos</h4>
         <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
