@@ -1,38 +1,38 @@
 -----------------
 typeItem
 -----------------
-idtype
-description
-img-name
-img-url
+IdType
+Description
+ImgName
+ImgUrl
 
 
 -----------------
 Item
 -----------------
-iditem
-idtype
-description
-price
-img-name
-img-url
+IdItem
+IdType
+Description
+Price
+ImgName
+ImgUrl
 
 -----------------
 order
 -----------------
-idorder
-date_reg
-tax
-total
+IdOrder
+DateReg
+Tax
+Total
 
 -----------------
 order_detail
 -----------------
-idorder
-iditem
-quantity
-price
-discount
+IdOrder
+IdItem
+Quantity
+Price
+Discount
 
 
 

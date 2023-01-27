@@ -43,6 +43,34 @@ export const Items = () => {
         <h4 className="item-price">$ 14.24</h4>
         <button class="btn btn-primary">Agregar</button>
       </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h4 className="item-name">Titulos</h4>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h4 className="item-name">Titulos</h4>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h4 className="item-name">Titulos</h4>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
+
+      <div className="Items">
+        <img className="item-img" src={pizza1} alt="detailing_items" />
+        <h4 className="item-name">Titulos</h4>
+        <h4 className="item-price">$ 14.24</h4>
+        <button class="btn btn-primary">Agregar</button>
+      </div>
     </>
   );
 };

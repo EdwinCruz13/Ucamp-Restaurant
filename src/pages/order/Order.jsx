@@ -29,7 +29,7 @@ export const Order = () => {
               </div>
           </div>
           <div id="Invoice" className="product-invoice">
-            <h2 className="itemAdded"># Products added</h2>
+            <h2 className="itemAdded" style={{"color": "#9E9E9E","font-size": "22px", "margin-bottom": "2rem"}}>There are # items added in your order</h2>
             <Invoice />
           </div>
       </section>
