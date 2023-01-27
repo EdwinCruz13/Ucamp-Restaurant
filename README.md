@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Sistema de Restaurante - React y Firebase
+Bienvenido al repositorio de como crear un módulo básico de restaurante usando React.js y almacenando datos a la plataforma de Firebase>.
+<br>
+Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Restaurant/">🔗 aqui</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details close="">
+  <summary><h2>✨Acerca del módulo</h2></summary>
+  <br>
+<p dir="auto">
+    En este sistema de restaurante permitirá la orden y compra de platillos online que son ofrecido en un 'local', permitirá la recepción de 
+    pedidos onlines y envío del mismo, ideal para mipyme y pequeños comerciantes.
+    <br><br>
+    <img src="https://github.com/EdwinCruz13/Ucamp-Restaurant/blob/main/structure/e2.png?raw=true" />
+</p>
+</details>
 
-## Available Scripts
 
-In the project directory, you can run:
+<details open="">
+  <summary><h2>🚀 Estructura del proyecto</h2></summary>
+<p dir="auto"> 
+Este sistema de restaurante fue creado en <b>react.js</b>, la estructura del proyecto consiste:
+Carpetas "public" que contiene archivos que será usado como la visualización principal.
+Carpetas "src" que contiene archivos .jsx que es la manera de como esta creado el proyecto.
+Archivo "package.json" de como esta configurado el proyecto.
 
-### `npm start`
+Dentro de src encontraremos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [x] 📁 La carpeta <b>resources</b> contiene archivos de imagenes usados en la página web.
+  <br>
+- [x] 📁 La carpeta <b>components</b> jsx con funcionalidad a nivel de componenten.
+  <br>
+- [x] 📁 La carpeta <b>icons</b> contiene imagenes usada en el proyecto.
+  <br>
+- [x] 📁 La carpeta <b>pages</b> que contiene archivos jsx como interfaz y redireccionamiento.
+  <br>
+- [x] 🗎  El archivo <b>app.js</b> es el componente padre.
+  <br>
+- [x] 🗎  El archivo <b>index.js</b> es el archivo maestro.
+  <br><br>
+  <img src="https://github.com/EdwinCruz13/Ucamp-Restaurant/blob/main/structure/e2.png?raw=true" />
+            
+</p>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details open="">
+  <summary><h2>💡 Resultado</h2></summary>
+<p dir="auto"> 
+  Ver el proyecto <a href="https://edwincruz13.github.io/Ucamp-Restaurant/">🔗 aqui</a>
+  <br>
+  <ul>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Restaurant/blob/main/structure/e2.png?raw=true">1 - Versión desktop.</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Restaurant/blob/main/structure/e3.png?raw=true"> 2 - Versión mobile.</a></li>
+  </ul>        
+</p>
+</details>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details open="">
+  <summary><h2>✨Give some feedbacks</h2></summary>
+<p dir="auto">
+  This repository is one of some season of courses I am doing, feel as your home reading it, we will learn together, it is ok if you have any question, and do not forget giving me some feedback.
+  </br>
+  <ul>
+    <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud">CRUD - Lista de tareas usando localstoraged y JS</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API REST</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Restaurant">Sistema de Restaurante - React y Firebase</a></li>
+    <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
+    <li><a href="#">Mongo</a></li>
+    <li><a href="#">Express</a></li>
+    <li><a href="#">React</a></li>
+    <li><a href="https://github.com/EdwinCruz13/NodeJS-Lesson">NodeJS</a></li>
+  </ul>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</p>
+</details>
