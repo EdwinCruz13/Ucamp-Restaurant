@@ -3,7 +3,7 @@ Bienvenido al repositorio de como crear un módulo básico de restaurante usando
 <br>
 Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Restaurant/">🔗 aqui</a>
 
-<details close="">
+<details open="">
   <summary><h2>✨Acerca del módulo</h2></summary>
   <br>
 <p dir="auto">
