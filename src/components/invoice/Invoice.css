@@ -39,6 +39,8 @@
     margin-top: -15px;
     top:0;
   }
+
+
   
   
   
@@ -95,3 +97,32 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+
+.list-task{
+    height:450px;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+}
+
+
+.list-task::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.list-task::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+
+.list-task::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 1px solid #f1f2f3;
+    
+}
+
+.list-task::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    cursor: pointer;
+}

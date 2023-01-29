@@ -1,122 +1,24 @@
 import React from "react";
+import { useState } from "react";
+import { ItemAdded } from "./ItemAdded";
 
 import "./Invoice.css";
-import burger1 from "../../icons/images/burger1.png";
 
 export const Invoice = () => {
-    return (
-        <>
-            <div data-id="1" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
+  const [count, setCount] = useState({
+    counters: [{ id: 1 }, { id: 2 }],
+  });
 
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
+  return (
+    <>
+      <div className="item-list list-task">
+        /*TODO: hice que iterara de acuerdo a una lista, ahora agregar el contador de items */
+        {count.counters.map(({ id, classItem }) => (
+          <ItemAdded key={id} id={id}  />
+        ))}
+      </div>
 
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div data-id="2" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
-
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
-
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div data-id="2" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
-
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
-
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div data-id="2" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
-
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
-
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div data-id="2" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
-
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
-
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-            <div data-id="2" className="card">
-                <div className="image">
-                    <img src={burger1} alt="" />
-                </div>
-
-                <div className="details">
-                
-                    <h1>Burger chess and jam</h1>
-                    <h2 className="item-price">$25.4</h2>
-
-                    <div className="btn-group">
-                        <button className="btn btn-default rounded-left">-</button>
-                        <span>5</span>
-                        <button className="btn btn-default rounded-right">+</button>
-                    </div>
-                </div>
-            </div>
-
-
-            
-
-        </>
-    )
-}
+      <div className="invoice-ticket">i am the ending bill</div>
+    </>
+  );
+};
