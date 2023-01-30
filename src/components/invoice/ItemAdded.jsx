@@ -1,15 +1,8 @@
 import React from "react";
-import { useState } from "react";
-
-import { Counter } from '../Counter';
 import burger1 from "../../icons/images/burger1.png";
 
-export const ItemAdded = ({id}) => {
-    //const [counterItem, Increment, Decrease] = Counter();
-    //const [state, setState] = useState({ count: 0 });
+export const ItemAdded = ({ id, itemAdded, Increase, Decrease }) => {
 
-
-  
   
 
   return (
@@ -26,14 +19,14 @@ export const ItemAdded = ({id}) => {
           <div className="btn-group">
             <button
               className="btn btn-default rounded-left"
-              
+              onClick={Decrease}
             >
               -
             </button>
-            <span>2</span>
+            <span>{itemAdded}</span>
             <button
               className="btn btn-default rounded-right"
-              
+              onClick={Increase}
             >
               +
             </button>

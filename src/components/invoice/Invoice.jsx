@@ -5,16 +5,33 @@ import { ItemAdded } from "./ItemAdded";
 import "./Invoice.css";
 
 export const Invoice = () => {
-  const [count, setCount] = useState({
-    counters: [{ id: 1 }, { id: 2 }],
-  });
+  const [count, setCount] = useState({ counters: [{ id: 1 }, { id: 2 }] });
+
+
+
+  const [itemAdded, setItemAdded] = useState(1);
+
+  //event in order to increase a item
+  const Increase = () => {
+    setItemAdded(itemAdded + 1);
+  }
+
+  //event in order to decrease a item
+  const Decrease = () => {
+    if (itemAdded < 2)
+      setItemAdded(1)
+
+    else
+      setItemAdded(itemAdded - 1);
+  }
+
+
 
   return (
     <>
       <div className="item-list list-task">
-        /*TODO: hice que iterara de acuerdo a una lista, ahora agregar el contador de items */
-        {count.counters.map(({ id, classItem }) => (
-          <ItemAdded key={id} id={id}  />
+        {count.counters.map(({ id }) => (
+          <ItemAdded key={id} id={id} itemAdded={itemAdded} Increase={Increase} Decrease={Decrease}/>
         ))}
       </div>
 

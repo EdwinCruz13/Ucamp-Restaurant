@@ -191,6 +191,7 @@
   #Order-page #Order-body #Invoice{
     top: 0;
     position: relative;
+    z-index: -100;
   }
 
   
