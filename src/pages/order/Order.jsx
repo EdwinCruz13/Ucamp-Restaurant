@@ -1,39 +1,73 @@
 import React from "react";
+import { useState, useEffect } from "react";
+
 import "./Order.css";
 
-//componente
+//components
 import { Header } from "../../components/header/Header";
 import { Badge } from "../../components/badge/Badge";
 import { Items } from "../../components/items/Items";
 import { Invoice } from "../../components/invoice/Invoice";
 
+//data
+import { Item_data } from "../../data";
+
+
 export const Order = () => {
+  
+  const [itemsState, setItemsState] = useState(Item_data);
+
+  /*useEffect(() => {
+    setItemsState(Item_data);
+  }, [itemsState]);*/
+
+  
+  //filter according the selected food type
+  const FilterTypes = async(idType) => {
+    //await setItemsState(Item_data);
+
+    //let _array = [];
+     await setItemsState(itemsState.filter(element => element.IdType == idType));
+
+     console.log(itemsState);
+
+    //await setItemsState(itemsState);
+    
+  }
+
   return (
     <div id="Order-page">
-      <Header/>
+      <Header />
 
       <section id="Order-body">
-          <div id="Product-Items" className="product-invoice">
-              <div className="Product-Type">
-                  <Badge />
-              </div>
+        <div id="Product-Items" className="product-invoice">
+          <div className="Product-Type">
+            <Badge FilterTypes={FilterTypes} />
+          </div>
 
-              <div className="products-list">
-                  <div className="titles">
-                    <h2>Choose Your Order</h2>
-                    
-                  </div>
-                  <div className="list">
-                    <Items />
-                  </div>
-              </div>
+          <div className="products-list">
+            <div className="titles">
+              <h2>Choose Your Order</h2>
+            </div>
+            <div className="list">
+              <Items Items={itemsState} />
+            </div>
           </div>
-          <div id="Invoice" className="product-invoice">
-            <h2 className="itemAdded" style={{"color": "#9E9E9E","font-size": "22px", "margin-bottom": "2rem"}}>There are # items added in your order</h2>
-            <Invoice />
-          </div>
+        </div>
+        <div id="Invoice" className="product-invoice">
+          <h2
+            className="itemAdded"
+            style={{
+              color: "#9E9E9E",
+              "font-size": "22px",
+              "margin-bottom": "2rem",
+            }}
+          >
+            There are # items added in your order
+          </h2>
+          <Invoice />
+        </div>
       </section>
-
     </div>
   );
 };
