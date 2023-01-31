@@ -1,32 +1,32 @@
 import React from "react";
 import burger1 from "../../icons/images/burger1.png";
 
-export const ItemAdded = ({ id, itemAdded, Increase, Decrease }) => {
+export const ItemAdded = ({ itemAdded}) => {
 
   
 
   return (
     <>
-      <div data-id={id} className="card">
+      <div data-id={itemAdded.IdItem} className="card">
         <div className="image">
-          <img src={burger1} alt="" />
+          <img src={itemAdded.ImgUrl} alt="" />
         </div>
 
         <div className="details">
-          <h1>Burger chess and jam</h1>
-          <h2 className="item-price">14.5</h2>
+          <h1>{itemAdded.Description}</h1>
+          <h2 className="item-price">{itemAdded.Price}</h2>
 
           <div className="btn-group">
             <button
               className="btn btn-default rounded-left"
-              onClick={Decrease}
+              /*onClick={Decrease}*/
             >
               -
             </button>
-            <span>{itemAdded}</span>
+            <span>0</span>
             <button
               className="btn btn-default rounded-right"
-              onClick={Increase}
+              /*onClick={Increase}*/
             >
               +
             </button>
