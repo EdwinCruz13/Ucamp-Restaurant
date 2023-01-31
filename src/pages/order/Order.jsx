@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState/*, useEffect*/ } from "react";
 
 import "./Order.css";
 
@@ -16,6 +16,7 @@ import { Item_data } from "../../data";
 export const Order = () => {
 
   const [itemsState, setItemsState] = useState(Item_data);
+  const [itemsSelectedState, setitemsSelectedState] = useState([]);
 
   /*useEffect(() => {
     setItemsState(Item_data);
@@ -24,12 +25,20 @@ export const Order = () => {
 
   //filter according the selected food type
   const FilterTypes = async (idType) => {
-    if (idType == "00")
+    if (idType === "00")
       await setItemsState(Item_data);
 
     else
       await setItemsState(Item_data.filter(element => element.IdType === idType));
 
+  }
+
+
+  /*TODO:: MAKE THIS STATE WILL BE AN ARRAY */
+  const AddCard = async(itemID) =>{
+    await setitemsSelectedState(Item_data.filter(element => element.IdItem === itemID));
+
+    console.log(itemsSelectedState);
   }
 
   return (
@@ -47,7 +56,7 @@ export const Order = () => {
               <h2>Choose Your Order</h2>
             </div>
             <div className="list">
-              <Items Items={itemsState} />
+              <Items Items={itemsState} AddCard = { AddCard }/>
             </div>
           </div>
         </div>
@@ -62,7 +71,7 @@ export const Order = () => {
           >
             There are # items added in your order
           </h2>
-          <Invoice />
+          <Invoice itemAdded = { itemsSelectedState } />
         </div>
       </section>
     </div>
