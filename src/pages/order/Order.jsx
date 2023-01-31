@@ -14,25 +14,22 @@ import { Item_data } from "../../data";
 
 
 export const Order = () => {
-  
+
   const [itemsState, setItemsState] = useState(Item_data);
 
   /*useEffect(() => {
     setItemsState(Item_data);
   }, [itemsState]);*/
 
-  
+
   //filter according the selected food type
-  const FilterTypes = async(idType) => {
-    //await setItemsState(Item_data);
+  const FilterTypes = async (idType) => {
+    if (idType == "00")
+      await setItemsState(Item_data);
 
-    //let _array = [];
-     await setItemsState(itemsState.filter(element => element.IdType == idType));
+    else
+      await setItemsState(Item_data.filter(element => element.IdType === idType));
 
-     console.log(itemsState);
-
-    //await setItemsState(itemsState);
-    
   }
 
   return (
