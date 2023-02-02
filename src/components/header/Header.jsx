@@ -20,14 +20,15 @@ export const Header = () => {
               <Link to="/Home">Home</Link>
             </li>
             <li>
-              <Link to="/Order">Menu</Link>
-            </li>
-            <li>
-              <Link to="/Blog">Blog</Link>
-            </li>
-            <li>
               <Link to="/Contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/Menu">Menu</Link>
+            </li>
+            <li>
+              <Link to="/Purchases">My Orders</Link>
+            </li>
+            
           </ul>
         </nav>
         <div id="social-media-link">

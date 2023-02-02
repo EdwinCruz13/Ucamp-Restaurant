@@ -23,7 +23,7 @@ export const ItemAdded = ({ itemAdded}) => {
             >
               -
             </button>
-            <span>0</span>
+            <span>1</span>
             <button
               className="btn btn-default rounded-right"
               /*onClick={Increase}*/

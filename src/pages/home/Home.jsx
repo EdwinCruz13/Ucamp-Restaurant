@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Home.css";
 
 //componente
@@ -17,23 +18,25 @@ export const Home = () => {
 
       <section id="home-articles">
         <div>
-            <article>
-                <h2><a href="#">Ingredients</a></h2>
-                <br />
-                <p>
-                    For special plates you need unique
-                    ingredients and we dow everything with
-                    the heart and passion.
-                </p>
-            </article>
-            <article>
-                <h2><a href="#">Recipes</a></h2>
-                <br />
-                <p>
-                    Each recipe tells a story. Come and visit us
-                    in our restaurants.
-                </p>
-            </article>
+          <article>
+            <h2>
+              <Link to="/Contact">Contact</Link>
+            </h2>
+            <br />
+            <p>
+              From your contact, we will contact you to review dates and
+              schedule availability.
+            </p>
+          </article>
+          <article>
+            <h2>
+              <a href="#">Address</a>
+            </h2>
+            <br />
+            <p>Managua, Nicaragua, Bo La fuente, Duya Mágica 1C Sur.</p>
+            <br />
+            <p>Granada, Nicaragua, Bo La fuente, Duya Mágica 1C Sur.</p>
+          </article>
         </div>
       </section>
     </div>

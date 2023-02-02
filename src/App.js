@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home } from "./pages/home/Home";
-import { Order } from "./pages/order/Order";
-import { Blog } from "./pages/blog/Blog";
+import { Menu } from "./pages/menu/Menu";
 import { Contact } from "./pages/contact/Contact";
+import { MyOrder } from "./pages/order/MyOrder";
 
 import "./App.css";
 
@@ -14,9 +14,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/Order" element={<Order />} />
-        <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Menu" element={<Menu />} />
+        <Route path="/Purchases" element={<MyOrder />} />
+        
       </Routes>
     </BrowserRouter>
   );
