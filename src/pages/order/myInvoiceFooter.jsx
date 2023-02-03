@@ -3,8 +3,10 @@ import React from "react";
 import { Invoice_Detail } from "../../data";
 
 export const MyInvoiceFooter = ({ detail }) => {
+  
+
   let mylist = Invoice_Detail.filter((product) => {
-    return product.IdInvoice === detail.IdInvoice;
+    return product.IdInvoice === detail.IdInvoice && product.Item === detail.Item ;
   });
 
   let TotalUnit = mylist.reduce((acumulator, object) => {

@@ -38,17 +38,17 @@ export const MyInvoice = ({ bill }) => {
             </thead>
             <tbody>
               {Invoice_Detail.map((item) => {
-                if (item.IdInvoice == bill.IdInvoice)
+                if (item.IdInvoice === bill.IdInvoice)
                   return <MyInvoiceDetail key={item.Id} detail={item} />;
               })}
             </tbody>
             <line></line>
             <tfoot>
-              {Invoice_Detail.map((item) => {
-                if (item.IdInvoice == bill.IdInvoice)
-                  return (
-                    <MyInvoiceFooter key={item.Id} detail={item} />
-                  );
+              {Invoice_Detail.filter((product) => {return product.IdInvoice === bill.IdInvoice} ).map((item) => {
+                console.log(Invoice_Detail);
+                if (item.IdInvoice === bill.IdInvoice)
+                  return <MyInvoiceFooter key={item.Id} detail={item} />
+                  
               })}
             </tfoot>
           </table>
