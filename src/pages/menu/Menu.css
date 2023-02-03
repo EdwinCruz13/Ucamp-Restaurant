@@ -145,6 +145,7 @@
   #Menu-page #Menu-body #Invoice{
     top: 0;
     position: relative;
+    z-index: 100;
   }
 
   
@@ -188,7 +189,7 @@
   #Menu-page #Menu-body #Invoice{
     top: 0;
     position: relative;
-    z-index: -100;
+    z-index: 100;
   }
 
   
