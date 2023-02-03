@@ -1,0 +1,167 @@
+#MyOrder-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#MyOrder-page #header-menu {
+  background-color: rgba(33, 33, 33, 1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#MyOrder-page #MyOrder-body {
+  display: grid;
+  grid-template-columns: repeat(6, 4fr);
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+
+  position: relative;
+  top: 130px;
+
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+
+  padding: 0.75rem 0.25rem;
+  border-radius: 15px;
+  background-color: #D7CCC8;
+}
+
+.purchase-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.purchase-header article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: space-around;
+  gap: 0.8rem;
+}
+
+.purchase .title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #616161;
+}
+
+.purchase .result {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: right;
+  color: #757575;
+}
+
+.purchase-header img {
+  width: 100%;
+  height: 70px;
+
+  border-radius: 15%;
+}
+
+.purchase-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.purchase-body .booked-at {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 14px;
+  font-weight: normal;
+  text-align: right;
+  color: #757575;
+  padding: 0.5rem;
+
+  border-top: solid #616161 1px;
+  border-bottom: solid #616161 1px;
+}
+
+.purchase table {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  margin-top: 0rem;
+}
+
+.purchase table tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.purchase table td,
+table th {
+  border: 1px solid transparent;
+  padding: 4px;
+  text-align: center;
+  color: #616161;
+}
+
+
+line {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 0.01rem solid #797979;
+  margin-bottom: 0.5rem;
+}
+
+.purchase table td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: transparent;
+  text-align: center;
+  color: #616161;
+  font-size: 14px;
+}
+
+.purchase table tfoot td {
+  font-size: 12px;
+  text-align: right;
+  margin-top: -15px;
+}
+
+.purchase table tfoot tr:nth-child(1) {
+    font-size: 18px;
+    text-align: right;
+  }

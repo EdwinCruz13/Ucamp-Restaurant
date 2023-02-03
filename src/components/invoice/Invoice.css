@@ -138,7 +138,7 @@
   padding: 1rem;
 }
 
-table {
+.invoice-ticket table {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-collapse: collapse;
   text-align: center;
@@ -146,7 +146,7 @@ table {
   margin-top: 2rem;
 }
 
-table tr{
+.invoice-ticket table tr{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,18 +154,18 @@ table tr{
 }
 
 
-table td, table th {
+.invoice-ticket table td, table th {
   border: 1px solid transparent;
   padding: 4px;
   text-align: center;
   color: #616161;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+.invoice-ticket table tr:nth-child(even){background-color: #f2f2f2;}
 
-table tr:hover {background-color: #ddd;}
+.invoice-ticket table tr:hover {background-color: #ddd;}
 
-line{
+.invoice-ticket line{
   display: block;
   width: 100%;
   height: auto;
@@ -173,7 +173,7 @@ line{
   margin-bottom: 0.5rem;
 }
 
-table td {
+.invoice-ticket table td {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
