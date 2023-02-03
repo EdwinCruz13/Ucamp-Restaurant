@@ -2,9 +2,15 @@ import React from "react";
 import { useState } from "react";
 import { ItemAdded } from "./ItemAdded";
 
+import { AddInvoice, LastInvoiceCode } from "../../localStorage";
+
 import "./Invoice.css";
 
+
 export const Invoice = ({ itemsAdded }) => {
+  const [invoice, setInvoice] = useState({});
+  const [Currentdate, setCurrentDate] = useState('');
+
   const Tax = 0.15;
   let Units = itemsAdded.length;
   let TotalUnit = itemsAdded.reduce((acumulator, object) => {
@@ -14,20 +20,35 @@ export const Invoice = ({ itemsAdded }) => {
     return acumulator + object.Price * Tax;
   }, 0);
   let Total = TotalUnit + TotalTax;
-  /*const [count, setCount] = useState({ counters: [{ id: 1 }, { id: 2 }] });
-  const [itemAdded, setItemAdded] = useState(1);
-  //event in order to increase a item
-  const Increase = () => {
-    setItemAdded(itemAdded + 1);
-  }
-  //event in order to decrease a item
-  const Decrease = () => {
-    if (itemAdded < 2)
-      setItemAdded(1)
 
-    else
-      setItemAdded(itemAdded - 1);
+
+  /*function SaveInvoice() {
+    let year = new Date().getFullYear();
+    let month =
+      new Date().getMonth() + 1 < 10
+        ? "0" + (new Date().getMonth() + 1).toString()
+        : (new Date().getMonth() + 1).toString();
+    let day =
+      new Date().getDate() < 10
+        ? "0" + new Date().getDate().toString()
+        : new Date().getDate();
+
+    let _DataAt = year + "-" + month + "-" + day;
+
+    //add new item
+    setInvoice({
+      IdInvoice: LastInvoiceCode,
+      BookedAt: Currentdate,
+      DateAt: _DataAt,
+    });
+
+    AddInvoice(invoice);
   }*/
+
+  const handleChange = (event) => {
+    let inputDate = event.target.value;
+    setCurrentDate(inputDate);
+  }
 
   return (
     <>
@@ -41,7 +62,7 @@ export const Invoice = ({ itemsAdded }) => {
 
       <div className="invoice-ticket">
         <h3>Seleccione la fecha de reservación</h3>
-        <input type="date" />
+        <input type="date" name="date" id="date" value={Currentdate} required pattern="\d{4}-\d{2}-\d{2}" onChange={handleChange} />
         <table>
           <tr>
             <th>Items ({Units})</th>
@@ -58,7 +79,9 @@ export const Invoice = ({ itemsAdded }) => {
           </tr>
         </table>
         <br />
-        <button class="btn btn-primary">Reservar</button>
+        <button class="btn btn-primary" >
+          Reservar
+        </button>
       </div>
     </>
   );

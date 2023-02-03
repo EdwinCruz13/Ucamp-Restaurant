@@ -313,4 +313,14 @@ export let Invoice_Detail = [
         Total: 21.27
     },
 
+    {
+      Id:5,
+      IdInvoice: "ID002",
+      Item: "018",
+      UnitPrice: 15,
+      Quantity: 1,
+      Tax:15,
+      Total: 17.25
+  },
+
 ];

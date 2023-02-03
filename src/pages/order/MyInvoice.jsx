@@ -1,12 +1,23 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+
 import { MyInvoiceDetail } from "./MyInvoiceDetail";
 import { MyInvoiceFooter } from "./myInvoiceFooter";
-
 import { Invoice_Detail } from "../../data";
 
 import Logo from "./logo.png";
 
+
 export const MyInvoice = ({ bill }) => {
+  const [details, setDetail] = useState([]);
+
+  useEffect(() => {
+    setDetail(
+        Invoice_Detail.filter((product) => {return product.IdInvoice === bill.IdInvoice})
+    )
+  }, [bill]);
+
   
   return (
     <div class="purchase">
@@ -37,19 +48,11 @@ export const MyInvoice = ({ bill }) => {
               </tr>
             </thead>
             <tbody>
-              {Invoice_Detail.map((item) => {
-                if (item.IdInvoice === bill.IdInvoice)
-                  return <MyInvoiceDetail key={item.Id} detail={item} />;
-              })}
+               <MyInvoiceDetail key={bill.IdItem} detail={details} />
             </tbody>
             <line></line>
             <tfoot>
-              {Invoice_Detail.filter((product) => {return product.IdInvoice === bill.IdInvoice} ).map((item) => {
-                console.log(Invoice_Detail);
-                if (item.IdInvoice === bill.IdInvoice)
-                  return <MyInvoiceFooter key={item.Id} detail={item} />
-                  
-              })}
+                <MyInvoiceFooter key={bill.IdItem} detail={details} />
             </tfoot>
           </table>
         </section>
