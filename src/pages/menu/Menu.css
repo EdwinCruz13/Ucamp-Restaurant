@@ -112,6 +112,11 @@
   width: 100%;
 }
 
+#Invoice{
+  height:560px;
+  overflow-y: scroll;
+}
+
 
 
 
