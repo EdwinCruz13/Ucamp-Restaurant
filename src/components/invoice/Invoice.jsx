@@ -45,6 +45,10 @@ export const Invoice = ({ itemsAdded }) => {
     AddInvoice(invoice);
   }*/
 
+  const saveOrder = () => {
+    alert("I need finish this module LOL");
+  }
+
   const handleChange = (event) => {
     let inputDate = event.target.value;
     setCurrentDate(inputDate);
@@ -79,7 +83,7 @@ export const Invoice = ({ itemsAdded }) => {
           </tr>
         </table>
         <br />
-        <button class="btn btn-primary" >
+        <button class="btn btn-primary" onClick={ saveOrder } >
           Reservar
         </button>
       </div>
