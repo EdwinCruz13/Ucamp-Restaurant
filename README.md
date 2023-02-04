@@ -1,4 +1,4 @@
-# Sistema de Restaurante - React y Firebase
+# Sistema de Restaurante - Con React
 Bienvenido al repositorio de como crear un módulo básico de restaurante usando React.js y almacenando datos a la plataforma de Firebase.
 <br>
 Puedes Ver el sitio <a href="https://edwincruz13.github.io/Ucamp-Restaurant/">🔗 aqui</a>
@@ -64,7 +64,7 @@ Dentro de src encontraremos
     <li><a href="https://github.com/EdwinCruz13/LandingPage/">Landing Page</a></li>
     <li><a href="https://github.com/EdwinCruz13/Ucamp-Crud">CRUD - Lista de tareas usando localstoraged y JS</a></li>
     <li><a href="https://github.com/EdwinCruz13/Ucamp-Dashboard/">Dashboard - Consumiendo una API REST</a></li>
-    <li><a href="https://github.com/EdwinCruz13/Ucamp-Restaurant">Sistema de Restaurante - React y Firebase</a></li>
+    <li><a href="https://github.com/EdwinCruz13/Ucamp-Restaurant">Sistema de Restaurante - Con React</a></li>
     <li><a href="https://github.com/EdwinCruz13/MERN">MERN</a></li>
     <li><a href="#">Mongo</a></li>
     <li><a href="#">Express</a></li>
